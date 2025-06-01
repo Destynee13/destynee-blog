@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/content.css">
+    <style>
+        body {
+            background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+            animation: gradient-animation 18s ease infinite;
+            h2 {
+                font-size: 2rem;
+            }
+            
+            button {
+     background: #3586ff;
+     border-radius: 5px;
+     border: 0;
+     cursor: pointer;
+     color: white;
+     font-size: 24px;
+     padding-top: 10px;
+     padding-bottom: 10px;
+            }
+    @media (max-width: 680px) {
+        body {
+            background-color: aquamarine;
+        }
+        h2{
+            text-align: center !important;
+            font-size: 1 !important;
+        }
+        p {
+            text-align: center !important;
+        }
+        button {
+            display: block !important;
+            margin: 20px auto !important;
+        }
+    }
+        }
+    </style>
+    <title>View</title>
+</head>
+ <body>
+ <h2><%= nickname %></h2>
+ <br>
+ <p><%= story %></p>
+<br> 
+<form action="/back" method="post">
+<button type="submit" class="btn btn-primary">Back</button>
+</form>
+
+ </body>
+</html>
